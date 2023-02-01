@@ -4,7 +4,8 @@
   "description": "backend of toviewlater app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "dpk",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-validator": "^6.14.3",
     "mongoose": "^6.9.0",
     "nodemon": "^2.0.20"
   }
