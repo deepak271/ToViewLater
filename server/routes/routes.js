@@ -2,11 +2,11 @@ const router = require('express').Router();
 const userServices = require('../controller/services/userServices')
 const userLists = require('../controller/services/userListServices');
 
-router.get('/',userServices)
-// router.post('/')
+// router.get('/api/',userServices.userLogin)
+ router.post('/api/user/login',userServices.loginValidate,userServices.userLogin);
 
 // router.post('/api/user/login')
-// router.post('/api/user/signup')
+ router.post('/api/user/signup',userServices.detailValidate,userServices.addUser)
 
 // router.get('/api/list/getList')
 // router.post('/api/list/addList')

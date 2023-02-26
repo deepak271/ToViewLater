@@ -8,8 +8,8 @@ const routes=require('./routes/routes')
 
 const app = express()
 const port = process.env.PORT || 8080;
-//db();
-
+db();
+app.use(express.json());
 app.use('/',routes);
 
 app.listen(port, (err) => {
